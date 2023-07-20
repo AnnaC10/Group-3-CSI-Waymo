@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../example"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Group-3-CSI-Waymo"
+	}
+}

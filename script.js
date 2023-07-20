@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <h1>Jolly Jokes!</h1>
-    <input onclick="christmasJoke()" type="button" id="christmas" value="Christmas-Related Jokes">
-    <input onclick="miscJoke()" type="button" id="miscellaneous" value="Miscellaneous Jokes">
-    <input onclick="punJoke()" type="button" id="puns" value="Plain Old Puns">
-    <br><br>
-    <textarea id="joke" rows="5" col="5"></textarea>
-    <textarea id="joke2" rows="5" col="5"></textarea>
-    <script>
-        function christmasJoke() {
+function christmasJoke() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://v2.jokeapi.dev/joke/Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit");
     xhr.onreadystatechange = function () {
@@ -60,7 +42,3 @@ function punJoke() {
     }
     xhr.send();
 }
-        
-    </script>
-</body>
-</html>
