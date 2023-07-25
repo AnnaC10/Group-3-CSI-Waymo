@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolly Jokes</title>
+</head>
+<body>
+    <!-- setting up headers, buttons, and text - basic html -->
+    <h1>Jolly Jokes!</h1>
+    <input onclick="christmasJoke()" type="button" id="christmas" value="Holiday-Themed Jokes">
+    <input onclick="miscJoke()" type="button" id="miscellaneous" value="Miscellaneous Jokes">
+    <input onclick="punJoke()" type="button" id="puns" value="Plain Old Puns">
+    <br>
+    <input type="button" id="reset" value="RESET" onclick="reset()">
+    <br>
+    <textarea readonly="true" id="joke" rows="5" col="5"></textarea>
+    <textarea readonly="true" id="joke2" rows="5" col="5"></textarea>
+    <p>hover over this box for the punch line ↑</p>
+    <script>
+        // javascript for reset button
+        function reset() {
+            document.getElementById('joke').value = null;
+            document.getElementById('joke2').value = null;
+        }
+
+        // setting up the holiday, misc., and pun joke generators
+        function christmasJoke() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://v2.jokeapi.dev/joke/Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit");
+    xhr.onreadystatechange = function () {
+        var newJoke = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status < 300) {
+            document.getElementById('joke').value = newJoke.setup;
+            document.getElementById('joke2').value = newJoke.delivery;
+        }
+
+    }
+    xhr.send();
+}
+
+function miscJoke() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://v2.jokeapi.dev/joke/Miscellaneous?blacklistFlags=nsfw,religious,political,racist,sexist,explicit");
+    xhr.onreadystatechange = function () {
+        var newJoke = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status < 300) {
+            document.getElementById('joke').value = newJoke.setup;
+            document.getElementById('joke2').value = newJoke.delivery;
+        }
+
+    }
+    xhr.send();
+}
+
+function punJoke() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://v2.jokeapi.dev/joke/Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit");
+    xhr.onreadystatechange = function () {
+        var newJoke = JSON.parse(xhr.responseText);
+        if (xhr.readyState == 4 && xhr.status < 300) {
+            document.getElementById('joke').value = newJoke.setup;
+            document.getElementById('joke2').value = newJoke.delivery;
+        }
+
+    }
+    xhr.send();
+}
+        
+    </script>
+    <style>
+        /* styling the main part of the page */
+        body {
+            background-color: rgb(198, 192, 255);
+            border-style: dotted;
+            border-width: 7px;
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;    
+        }
+        /* styling the joke boxes */
+        #christmas {
+            height: 300px;
+            width: 300px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(223, 220, 255);
+            margin-bottom: 5px;
+        }
+
+        #miscellaneous {
+            height: 300px;
+            width: 300px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(223, 220, 255);
+            margin-bottom: 5px;
+        }
+
+        #puns {
+            height: 300px;
+            width: 300px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(223, 220, 255);
+            margin-bottom: 5px;
+        }
+        /* styling the labels with the jokes */
+        #joke {
+            height: 280px;
+            width: 280px;
+            background-color: rgb(235, 250, 255);
+            font-size: 0cap;
+            margin-top: 5px;
+        }
+
+        #joke2 {
+            height: 280px;
+            width: 280px;
+            background-color: rgb(235, 250, 255);
+            color: #f0fcfc;
+            margin-top: 5px;
+        }
+        /* making the punchline appear when you hover over it */
+        #joke2:hover {
+            color: black;
+        }
+    </style>
+</body>
+</html>
