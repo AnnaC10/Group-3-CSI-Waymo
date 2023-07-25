@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="funfacts.css">
+</head>
+<body>
+<!-- header/instructions section -->
+    <h1>Fun Facts</h1>
+    <p id="instructions">Click on any of the photos below to see a fun fact about the sport shown!</p>
+
+<!-- swimming section -->
+    <section id="swimming">
+        <h3>swimming</h3>
+                <button id="swimButton" onclick="sClick()" class="button"><img src="swimming.jpeg" alt = "swimming!"></button>
+                <button id="swimButton2" onclick="sClick2()" class="button"><img src="swimming3.jpg" alt = "swimming!"></button>
+                <button id="swimButton3" onclick="sClick3()" class="button"><img src="swimming4.webp" alt = "swimming!"></button>
+                <button id="swimButton4" onclick="sClick4()" class="button"><img src="swimming4.jpeg" alt = "swimming!"></button>
+                <button id="swimButton5" onclick="sClick5()" class="button"><img src="swimming5.webp" alt = "swimming!"></button>
+                <button id="swimButton6" onclick="sClick6()" class="button"><img src="swimming6.webp" alt = "swimming!"></button>
+                <p id="swimText"></p>
+    </section>
+
+<!-- tennis section -->
+    <section id="tennis">
+        <h3>tennis</h3>
+                <button id="tennisButton" onclick="tClick()" class="button"><img src="tennis2.avif" alt = "tennis!"></button>
+                <button id="tennisButton2" onclick="tClick2()" class="button"><img src="tennis.jpeg" alt = "tennis!"></button>
+                <button id="tennisButton3" onclick="tClick3()" class="button"><img src="tennis4.jpeg" alt = "tennis!"></button>
+                <button id="tennisButton4" onclick="tClick4()" class="button"><img src="tennis5.webp" alt = "tennis!"></button>
+                <button id="tennisButton5" onclick="tClick5()" class="button"><img src="tennis3.jpeg" alt = "tennis!"></button>
+                <button id="tennisButton6" onclick="tClick6()" class="button"><img src="tennis6.jpg" alt = "tennis!"></button>
+                <p id="tennisText"></p>
+    </section>
+
+<!-- basketball section -->
+    <section id="basketball">
+        <h3>basketball</h3>
+                <button id="basketballButton" onclick="bClick()" class="button"><img src="basketball3.jpeg" alt = "basketball!"></button>
+                <button id="basketballButton2" onclick="bClick2()" class="button"><img src="basketball2.jpeg" alt = "basketball!"></button>
+                <button id="basketballButton3" onclick="bClick3()" class="button"><img src="basketball6.jpeg" alt = "basketball!"></button>
+                <button id="basketballButton4" onclick="bClick4()" class="button"><img src="basketball4.jpeg" alt = "basketball!"></button>
+                <button id="basketballButton5" onclick="bClick5()" class="button"><img src="basketball5.jpeg" alt = "basketball!"></button>
+                <button id="basketballButton6" onclick="bClick6()" class="button"><img src="basketball.jpeg" alt = "basketball!"></button>
+                <p id="basketballText"></p>
+    </section>
+
+<!-- baseball section -->
+    <section id="baseball">
+        <h3>baseball</h3>
+                <button id="baseballButton" onclick="bbClick()" class="button"><img src="baseball.jpeg" alt = "baseball!"></button>
+                <button id="baseballButton2" onclick="bbClick2()" class="button"><img src="baseball2.jpeg" alt = "baseball!"></button>
+                <button id="baseballButton3" onclick="bbClick3()" class="button"><img src="baseball4.webp" alt = "baseball!"></button>
+                <button id="baseballButton4" onclick="bbClick4()" class="button"><img src="baseball3.jpeg" alt = "baseball!"></button>
+                <button id="baseballButton5" onclick="bbClick5()" class="button"><img src="baseball5.jpg" alt = "baseball!"></button>
+                <button id="baseballButton6" onclick="bbClick6()" class="button"><img src="baseball6.jpeg" alt = "baseball!"></button>
+                <p id="baseballText"></p>
+    </section>
+
+    <script>
+//swimming functions
+            function sClick() {
+                document.getElementById("swimText").innerHTML = "The first swimming goggles were made from tortoise shells!";
+            }
+            function sClick2() {
+                document.getElementById("swimText").innerHTML = "Breaststroke is the oldest known form of swimming stroke.";
+            }
+            function sClick3() {
+                document.getElementById("swimText").innerHTML = "Swimming was known to be a noble skill for Japanese samurai.";
+            }
+            function sClick4() {
+                document.getElementById("swimText").innerHTML = "The first swimming races were held in Japan in 36 BC!";
+            }
+            function sClick5() {
+                document.getElementById("swimText").innerHTML = "Australia is known as the country most passionate about swimming.";
+            }
+            function sClick6() {
+                document.getElementById("swimText").innerHTML = "An Olympic pool can hold up to 850,000 gallons of water!";
+            }
+//tennis functions
+            function tClick() {
+                document.getElementById("tennisText").innerHTML = "Before tennis players used rackets, people would use the palm of their hands to hit the ball back and forth over the net.";
+            }
+            function tClick2() {
+                document.getElementById("tennisText").innerHTML = "Venus and Serena Williams were the first ever set of sisters to win Olympic gold medals in tennis";
+            }
+            function tClick3() {
+                document.getElementById("tennisText").innerHTML = "The longest professional match took 11 hours and 5 minutes, played over 3 days.";
+            }
+            function tClick4() {
+                document.getElementById("tennisText").innerHTML = "The record for fastest serve is held by Sam Groth of Australia, with a serve speed of 263 km/h.";
+            }
+            function tClick5() {
+                document.getElementById("tennisText").innerHTML = "Until 1972, the tennis ball was often white or black, not yellow!";
+            }
+            function tClick6() {
+                document.getElementById("tennisText").innerHTML = "The first tennis courts were hourglass shaped, not rectangular!";
+            }
+//basketball functions
+            function bClick() {
+                document.getElementById("basketballText").innerHTML = "The first basketball 'hoops' were actually just peach baskets!";
+            }
+            function bClick2() {
+                document.getElementById("basketballText").innerHTML = "Basketball used to be played with soccer balls, not traditional basketballs.";
+            }
+            function bClick3() {
+                document.getElementById("basketballText").innerHTML = "Until 1897, dribbling wasn't allowed.";
+            }
+            function bClick4() {
+                document.getElementById("basketballText").innerHTML = "Basketball first became an official Olympics event during the 1936 Berlin Summer Olympics.";
+            }
+            function bClick5() {
+                document.getElementById("basketballText").innerHTML = "A minimum of nine balls are to be provided for each team for pre-game warmups.";
+            }
+            function bClick6() {
+                document.getElementById("basketballText").innerHTML = "The average NBA player runs around 2.5 miles per game!";
+            }
+//baseball functions
+            function bbClick() {
+                document.getElementById("baseballText").innerHTML = "The first recorded baseball game took place in 1846.";
+            }
+            function bbClick2() {
+                document.getElementById("baseballText").innerHTML = "The fastest MLB recorded game took 51 minutes.";
+            }
+            function bbClick3() {
+                document.getElementById("baseballText").innerHTML = "The longest MLB recorded game took 8 hours and 6 minutes";
+            }
+            function bbClick4() {
+                document.getElementById("baseballText").innerHTML = "The average baseball game takes three hours.";
+            }
+            function bbClick5() {
+                document.getElementById("baseballText").innerHTML = "'Take Me Out to the Ball Game' is the unofficial anthem of American baseball.";
+            }
+            function bbClick6() {
+                document.getElementById("baseballText").innerHTML = "The record of most homeruns in a baseball match by one person is 4.";
+            }
+    </script>
+</body>
+</html>

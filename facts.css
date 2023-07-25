@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(187, 201, 241);
+}
+img {
+    width: 100%;
+}
+.button {
+    width: 30%;
+    background-color:rgb(187, 201, 241);
+    border-style:double;
+    border-width: 20 px;
+    border-color: black;
+    padding: 0.5%;
+    margin: 0.25%
+}
+h1 {
+  font-family: Bradley Hand, cursive;
+}
+#instructions {
+  font-family: American Typewriter, serif;
+}
+h3 {
+  background-color: cornflowerblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+#swimming {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#tennis {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#basketball {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#baseball {
+  font-family: 'Courier New', Courier, monospace;
+}
