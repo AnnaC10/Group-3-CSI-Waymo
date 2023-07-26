@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jolly Jokes</title>
+    <link rel="icon" href="joke.png" type="image/x-icon">
+    <a href="index.html"><img id="home" src="purpleHouse.png" alt="Home">    </a>
 </head>
 <body>
     <!-- setting up headers, buttons, and text - basic html -->
+    <section>
     <h1>Jolly Jokes!</h1>
     <input onclick="christmasJoke()" type="button" id="christmas" value="Holiday-Themed Jokes">
     <input onclick="miscJoke()" type="button" id="miscellaneous" value="Miscellaneous Jokes">
@@ -17,6 +20,7 @@
     <textarea readonly="true" id="joke" rows="5" col="5"></textarea>
     <textarea readonly="true" id="joke2" rows="5" col="5"></textarea>
     <p>hover over this box for the punch line ↑</p>
+    </section>
     <script>
         // javascript for reset button
         function reset() {
@@ -75,30 +79,31 @@ function punJoke() {
             border-style: dotted;
             border-width: 7px;
             font-family:'Times New Roman', Times, serif;
-            text-align: center;    
         }
         /* styling the joke boxes */
         #christmas {
-            height: 300px;
-            width: 300px;
+            height: 270px;
+            width: 270px;
             font-size: 25px;
             font-family: 'Times New Roman', Times, serif;
             background-color: rgb(223, 220, 255);
             margin-bottom: 5px;
+            text-align: center;
         }
 
         #miscellaneous {
-            height: 300px;
-            width: 300px;
+            height: 270px;
+            width: 270px;
             font-size: 25px;
             font-family: 'Times New Roman', Times, serif;
             background-color: rgb(223, 220, 255);
             margin-bottom: 5px;
+            text-align: center;
         }
 
         #puns {
-            height: 300px;
-            width: 300px;
+            height: 270px;
+            width: 270px;
             font-size: 25px;
             font-family: 'Times New Roman', Times, serif;
             background-color: rgb(223, 220, 255);
@@ -106,16 +111,16 @@ function punJoke() {
         }
         /* styling the labels with the jokes */
         #joke {
-            height: 280px;
-            width: 280px;
+            height: 250px;
+            width: 250px;
             background-color: rgb(235, 250, 255);
             font-size: 0cap;
             margin-top: 5px;
         }
 
         #joke2 {
-            height: 280px;
-            width: 280px;
+            height: 250px;
+            width: 250px;
             background-color: rgb(235, 250, 255);
             color: #f0fcfc;
             margin-top: 5px;
@@ -123,6 +128,20 @@ function punJoke() {
         /* making the punchline appear when you hover over it */
         #joke2:hover {
             color: black;
+        }
+        #home {
+            height: 42px;
+            width: 51px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+        p {
+            text-align: center;
+        }
+        section {
+            text-align: center;
         }
     </style>
 </body>
