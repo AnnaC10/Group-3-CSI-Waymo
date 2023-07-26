@@ -1,0 +1,44 @@
+
+h1 {
+    text-align: center;
+  }
+  
+#movieButton {
+  display: flex;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #00FF00; 
+}
+
+#bookButton {
+  display: flex;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #00FF00; 
+  text-align: center;
+}
+
+#inspirationalButton {
+  display: flex;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #00FF00; 
+  text-align: right;
+}
+
+  
+
+body {
+  background-color: #B0E0E6; 
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#home {
+  height: 42px;
+  width: 51px;
+  
+}
+
