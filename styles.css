@@ -4,14 +4,14 @@ h1 {
   }
   
 #movieButton {
-  display: flex;
+  /* display: flex; */
   padding: 12px 24px;
   font-size: 18px;
   background-color: #00FF00; 
 }
 
 #bookButton {
-  display: flex;
+/* display: flex; */
   padding: 12px 24px;
   font-size: 18px;
   background-color: #00FF00; 
@@ -19,7 +19,7 @@ h1 {
 }
 
 #inspirationalButton {
-  display: flex;
+  /* display: flex; */
   padding: 12px 24px;
   font-size: 18px;
   background-color: #00FF00; 
@@ -42,3 +42,7 @@ body {
   
 }
 
+#quoteContainer {
+  float: right;
+  display: flex;
+}
